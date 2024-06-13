@@ -48,6 +48,9 @@ console.log(`My name is ${monkey.name} and I am a ${monkey.species} monkey who e
 const laboratory = {
     monster: {},
    experiment(partName, partValue) {
-    this.monster[partName] = partValue,
+    this.monster[partName] = partValue;
 }}
-laboratory.experiment('tentacles', 'very slimy parts')
+laboratory.experiment('tentacles', 'very slimy parts');
+laboratory.experiment('eyeCount', 13);
+laboratory.experiment('hair', { colour: 'Red', density: 10 });
+console.log(laboratory.monster);
